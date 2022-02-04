@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load static %}
+{% block description %}{{ product.description }}{% endblock %}
+{% block title %}{{ product.title }}{% endblock %}
+
+{% block content %}
+
+<div role="main" class="main">
+
+				<section class="page-header page-header-modern bg-color-light-scale-1 page-header-lg">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12 align-self-center p-static order-2 text-center font-weight-bold text-dark">
+								<h1>{{ product.name}}</h1>
+							</div>
+							<div class="col-md-12 align-self-center order-1">
+								<ul class="breadcrumb d-block text-center">
+									<li><a href="/">Главная</a></li>
+									<li class="active">{{ product.name}}</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<div class="container pt-3 pb-2">
+
+					<div class="row pt-2">
+
+						<div class="col">
+
+							{% autoescape off %} {{ product.content }} {% endautoescape %}
+                    {% if product.code %}
+                        {% autoescape off %}{{ product.code }}{% endautoescape %}
+                {% endif %}
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+
+
+
+{% endblock %}

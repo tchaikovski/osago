@@ -1,0 +1,717 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% block title %}Главная страница шаблон {% endblock %}</title>
+    <meta name="description" content="{% block description %}Описание базового шаблона{% endblock %}">
+    {#<meta name="author" content="okler.net">#}
+    <link rel="canonical" href="{{ request.path }}">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/static/img/favicon.ico" type="image/x-icon"/>
+    <link rel="apple-touch-icon" href="/static/img/apple-touch-icon.png">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+
+    <!-- Web Fonts  -->
+    <link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light&display=swap" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="/static/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/vendor/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="/static/vendor/animate/animate.compat.css">
+    <link rel="stylesheet" href="/static/vendor/simple-line-icons/css/simple-line-icons.min.css">
+    <link rel="stylesheet" href="/static/vendor/owl.carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/static/vendor/owl.carousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/static/vendor/magnific-popup/magnific-popup.min.css">
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="/static/css/theme.css">
+    <link rel="stylesheet" href="/static/css/theme-elements.css">
+    <link rel="stylesheet" href="/static/css/theme-blog.css">
+    <link rel="stylesheet" href="/static/css/theme-shop.css">
+
+    <!-- Current Page CSS -->
+    <link rel="stylesheet" href="/static/vendor/circle-flip-slideshow/css/component.css">
+
+    <!-- Skin CSS -->
+    <link id="skinCSS" rel="stylesheet" href="/static/css/skins/default.css">
+
+    <!-- Theme Custom CSS -->
+    <link rel="stylesheet" href="/static/css/custom.css">
+
+    <!-- Head Libs -->
+    <script src="/static/vendor/modernizr/modernizr.min.js"></script>
+
+</head>
+
+<body data-plugin-page-transition>
+<div class="body">
+
+{% include 'header.html' %}
+
+{% block content %}
+
+
+
+
+    <div role="main" class="main">
+
+
+{#{% include 'slider.html' %}#}
+
+
+
+
+
+        <div class="container">
+
+            <div class="row text-center pt-3">
+                <div class="col-md-10 mx-md-auto">
+                    <h1>Калькулятор ОСАГО</h1>
+                    <polis-online-widget-osago name="polis-online-widget-osago" data-api-key="mGyNdIcLrw" data-widget-id=14709></polis-online-widget-osago>
+<script src='https://agents.polis.online/widget_v2.min.js'></script>
+
+
+
+
+
+                    <h2 class="word-rotator slide font-weight-bold text-8 mb-3 appear-animation" data-appear-animation="fadeInUpShorter">
+                        <span>Платформа </span>
+                        <span class="word-rotator-words bg-dark">
+									<b class="is-visible">выбора</b>
+									<b>покупки</b>
+									<b>сравнения</b>
+								</span>
+                        <span> страховых полюсов и КАСКО.</span>
+                    </h2>
+                    <p class="lead appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit arcu, ac tincidunt mauris lacus sed leo.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
+            <div class="home-concept mt-5">
+                <div class="container">
+
+                    <div class="row text-center">
+                        <span class="sun"></span>
+                        <span class="cloud"></span>
+                        <div class="col-lg-2 ms-lg-auto">
+                            <div class="process-image">
+                                <img src="/static/img/home/home-concept-item-1.png" alt=""/>
+                                <strong>Заполните</strong>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="process-image process-image-on-middle">
+                                <img src="/static/img/home/home-concept-item-2.png" alt=""/>
+                                <strong>Сравните</strong>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="process-image">
+                                <img src="/static/img/home/home-concept-item-3.png" alt=""/>
+                                <strong>Оплатите</strong>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 ms-lg-auto">
+                            <div class="project-image">
+                                <div id="fcSlideshow" class="fc-slideshow">
+                                    <ul class="fc-slides">
+                                        <li><a href="#"><img class="img-fluid" src="/static/img/projects/project-home-1.jpg" alt=""/></a></li>
+                                        <li><a href="#"><img class="img-fluid" src="/static/img/projects/project-home-2.jpg" alt=""/></a></li>
+                                        <li><a href="#"><img class="img-fluid" src="/static/img/projects/project-home-3.jpg" alt=""/></a></li>
+                                    </ul>
+                                </div>
+                                <strong class="our-work">Пользуйтесь</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container mb-5 pb-4">
+
+            <div class="row">
+                <div class="col mb-4">
+                    <hr class="my-5">
+                </div>
+            </div>
+
+            <div class="row pb-3">
+                <div class="col-lg-8">
+                    <h2 class="font-weight-normal text-7">Our <strong class="font-weight-extra-bold">Features</strong></h2>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="feature-box feature-box-style-2">
+                                <div class="feature-box-icon">
+                                    <i class="icons icon-support text-color-primary"></i>
+                                </div>
+                                <div class="feature-box-info">
+                                    <h4 class="font-weight-bold text-4-5 mb-1">Customer Support</h4>
+                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa</p>
+                                </div>
+                            </div>
+                            <div class="feature-box feature-box-style-2">
+                                <div class="feature-box-icon">
+                                    <i class="icons icon-doc text-color-primary"></i>
+                                </div>
+                                <div class="feature-box-info">
+                                    <h4 class="font-weight-bold text-4-5 mb-1">HTML5 / CSS3 / JS</h4>
+                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa</p>
+                                </div>
+                            </div>
+                            <div class="feature-box feature-box-style-2">
+                                <div class="feature-box-icon">
+                                    <i class="icons icon-social-google text-color-primary"></i>
+                                </div>
+                                <div class="feature-box-info">
+                                    <h4 class="font-weight-bold text-4-5 mb-1">500+ Google Fonts</h4>
+                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa</p>
+                                </div>
+                            </div>
+                            <div class="feature-box feature-box-style-2">
+                                <div class="feature-box-icon">
+                                    <i class="icons icon-pencil text-color-primary"></i>
+                                </div>
+                                <div class="feature-box-info">
+                                    <h4 class="font-weight-bold text-4-5 mb-1">Colors</h4>
+                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="feature-box feature-box-style-2">
+                                <div class="feature-box-icon">
+                                    <i class="icons icon-layers text-color-primary"></i>
+                                </div>
+                                <div class="feature-box-info">
+                                    <h4 class="font-weight-bold text-4-5 mb-1">Sliders</h4>
+                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa</p>
+                                </div>
+                            </div>
+                            <div class="feature-box feature-box-style-2">
+                                <div class="feature-box-icon">
+                                    <i class="icons icon-user text-color-primary"></i>
+                                </div>
+                                <div class="feature-box-info">
+                                    <h4 class="font-weight-bold text-4-5 mb-1">Icons</h4>
+                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa</p>
+                                </div>
+                            </div>
+                            <div class="feature-box feature-box-style-2">
+                                <div class="feature-box-icon">
+                                    <i class="icons icon-menu text-color-primary"></i>
+                                </div>
+                                <div class="feature-box-info">
+                                    <h4 class="font-weight-bold text-4-5 mb-1">Buttons</h4>
+                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa</p>
+                                </div>
+                            </div>
+                            <div class="feature-box feature-box-style-2">
+                                <div class="feature-box-icon">
+                                    <i class="icons icon-screen-desktop text-color-primary"></i>
+                                </div>
+                                <div class="feature-box-info">
+                                    <h4 class="font-weight-bold text-4-5 mb-1">Lightbox</h4>
+                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h2 class="font-weight-normal text-6">and more...</h2>
+
+                    <div class="accordion accordion-modern" id="accordion">
+                        <div class="card card-default">
+                            <div class="card-header">
+                                <h4 class="card-title m-0">
+                                    <a class="accordion-toggle text-color-dark font-weight-bold" data-bs-toggle="collapse" data-bs-parent="#accordion" href="#collapseOne">
+                                        <i class="icons icon-diamond text-color-primary"></i>
+                                        Creative Websites
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="collapse show">
+                                <div class="card-body text-2">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blanorem ipsum dolor sit amet, consecte.</p>
+                                    <p class="mb-0">Adipiscing elit phasellus blanit ma... <a href="#" class="d-block text-color-dark font-weight-semibold pt-4">read more <i
+                                            class="fas fa-angle-right position-relative top-1 ms-1"></i></a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-default">
+                            <div class="card-header">
+                                <h4 class="card-title m-0">
+                                    <a class="accordion-toggle text-color-dark font-weight-bold" data-bs-toggle="collapse" data-bs-parent="#accordion" href="#collapseTwo">
+                                        <i class="icons icon-bubble text-color-primary"></i>
+                                        Contact Forms
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="collapse">
+                                <div class="card-body text-2">
+                                    <p class="mb-0">Donec tellus massa, tristique sit amet condimentum vel, facilisis quis sapien.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-default">
+                            <div class="card-header">
+                                <h4 class="card-title m-0">
+                                    <a class="accordion-toggle text-color-dark font-weight-bold" data-bs-toggle="collapse" data-bs-parent="#accordion" href="#collapseThree">
+                                        <i class="icons icon-grid text-color-primary"></i>
+                                        Portfolio Pages
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="collapse">
+                                <div class="card-body text-2">
+                                    <p class="mb-0">Donec tellus massa, tristique sit amet condimentum vel, facilisis quis sapien.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="solid my-5">
+
+            <div class="row text-center pt-4">
+                <div class="col">
+                    <h2 class="word-rotator slide font-weight-bold text-8 mb-2">
+                        <span>We're not the only ones </span>
+                        <span class="word-rotator-words bg-primary">
+									<b class="is-visible">excited</b>
+									<b>happy</b>
+								</span>
+                        <span> about Porto Template...</span>
+                    </h2>
+                    <h4 class="text-primary lead tall text-4">40,000 CUSTOMERS IN 100 COUNTRIES USE PORTO TEMPLATE. MEET OUR CUSTOMERS.</h4>
+                </div>
+            </div>
+
+            <div class="row text-center mt-5">
+                <div class="owl-carousel owl-theme carousel-center-active-item"
+                     data-plugin-options="{'responsive': {'0': {'items': 1}, '476': {'items': 1}, '768': {'items': 5}, '992': {'items': 7}, '1200': {'items': 7}}, 'autoplay': true, 'autoplayTimeout': 3000, 'dots': false}">
+                    <div>
+                        <img class="img-fluid" src="/static/img/logos/logo-1.png" alt="">
+                    </div>
+                    <div>
+                        <img class="img-fluid" src="/static/img/logos/logo-2.png" alt="">
+                    </div>
+                    <div>
+                        <img class="img-fluid" src="/static/img/logos/logo-3.png" alt="">
+                    </div>
+                    <div>
+                        <img class="img-fluid" src="/static/img/logos/logo-4.png" alt="">
+                    </div>
+                    <div>
+                        <img class="img-fluid" src="/static/img/logos/logo-5.png" alt="">
+                    </div>
+                    <div>
+                        <img class="img-fluid" src="/static/img/logos/logo-6.png" alt="">
+                    </div>
+                    <div>
+                        <img class="img-fluid" src="/static/img/logos/logo-4.png" alt="">
+                    </div>
+                    <div>
+                        <img class="img-fluid" src="/static/img/logos/logo-2.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <section class="section section-custom-map appear-animation lazyload" data-appear-animation="fadeInUpShorter" data-src-bg="img/map.png"
+                 style="background-color: transparent; background-position: center 0; background-repeat: no-repeat;">
+            <section class="section section-default section-footer">
+                <div class="container">
+                    <div class="row mt-5 appear-animation" data-appear-animation="fadeInUpShorter">
+                        <div class="col-lg-6">
+                            <div class="recent-posts mb-5">
+                                <h2 class="font-weight-normal text-6 mb-4"><strong class="font-weight-extra-bold">Latest</strong> Posts</h2>
+                                <div class="owl-carousel owl-theme dots-title mb-0" data-plugin-options="{'items': 1, 'autoHeight': true, 'autoplay': true, 'autoplayTimeout': 8000}">
+                                    <div class="row">
+                                        <div class="col-lg-6 mb-4 mb-lg-0">
+                                            <article>
+                                                <div class="row">
+                                                    <div class="col-auto pe-0">
+                                                        <div class="date">
+                                                            <span class="day font-weight-extra-bold">15</span>
+                                                            <span class="month text-1">JAN</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col ps-1">
+                                                        <h4 class="text-primary text-4"><a class="d-block" href="#">Lorem ipsum dolor sit amet, consectetur</a></h4>
+                                                        <p class="pe-4 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                        <a href="/" class="read-more text-color-dark font-weight-semibold text-2">read more <i class="fas fa-angle-right position-relative top-1 ms-1"></i></a>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <article>
+                                                <div class="row">
+                                                    <div class="col-auto pe-0">
+                                                        <div class="date">
+                                                            <span class="day font-weight-extra-bold">14</span>
+                                                            <span class="month text-1">JAN</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col ps-1">
+                                                        <h4 class="text-primary text-4"><a class="d-block" href="#">Lorem ipsum dolor sit amet, consectetur</a></h4>
+                                                        <p class="pe-4 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                        <a href="/" class="read-more text-color-dark font-weight-semibold text-2">read more <i class="fas fa-angle-right position-relative top-1 ms-1"></i></a>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 mb-4 mb-lg-0">
+                                            <article>
+                                                <div class="row">
+                                                    <div class="col-auto pe-0">
+                                                        <div class="date">
+                                                            <span class="day font-weight-extra-bold">13</span>
+                                                            <span class="month text-1">JAN</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col ps-1">
+                                                        <h4 class="text-primary text-4"><a class="d-block" href="#">Lorem ipsum dolor sit amet, consectetur</a></h4>
+                                                        <p class="pe-4 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                        <a href="/" class="read-more text-color-dark font-weight-semibold text-2">read more <i class="fas fa-angle-right position-relative top-1 ms-1"></i></a>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <article>
+                                                <div class="row">
+                                                    <div class="col-auto pe-0">
+                                                        <div class="date">
+                                                            <span class="day font-weight-extra-bold">12</span>
+                                                            <span class="month text-1">JAN</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col ps-1">
+                                                        <h4 class="text-primary text-4"><a class="d-block" href="#">Lorem ipsum dolor sit amet, consectetur</a></h4>
+                                                        <p class="pe-4 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                        <a href="/" class="read-more text-color-dark font-weight-semibold text-2">read more <i class="fas fa-angle-right position-relative top-1 ms-1"></i></a>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 mb-4 mb-lg-0">
+                                            <article>
+                                                <div class="row">
+                                                    <div class="col-auto pe-0">
+                                                        <div class="date">
+                                                            <span class="day font-weight-extra-bold">11</span>
+                                                            <span class="month text-1">JAN</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col ps-1">
+                                                        <h4 class="text-primary text-4"><a href="#">Lorem ipsum dolor sit amet, consectetur</a></h4>
+                                                        <p class="pe-4 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                        <a href="/" class="read-more text-color-dark font-weight-semibold text-2">read more <i class="fas fa-angle-right position-relative top-1 ms-1"></i></a>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <article>
+                                                <div class="row">
+                                                    <div class="col-auto pe-0">
+                                                        <div class="date">
+                                                            <span class="day font-weight-extra-bold">10</span>
+                                                            <span class="month text-1">JAN</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col ps-1">
+                                                        <h4 class="text-primary text-4"><a href="#">Lorem ipsum dolor sit amet, consectetur</a></h4>
+                                                        <p class="pe-4 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                        <a href="/" class="read-more text-color-dark font-weight-semibold text-2">read more <i class="fas fa-angle-right position-relative top-1 ms-1"></i></a>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <h2 class="font-weight-normal text-6 mb-4"><strong class="font-weight-extra-bold">What</strong> Client’s Say</h2>
+                            <div class="row">
+                                <div class="owl-carousel owl-theme dots-title dots-title-pos-2 mb-0" data-plugin-options="{'items': 1, 'autoHeight': true}">
+                                    <div>
+                                        <div class="col">
+                                            <div class="testimonial testimonial-primary">
+                                                <blockquote>
+                                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula est, in consequat.</p>
+                                                </blockquote>
+                                                <div class="testimonial-arrow-down"></div>
+                                                <div class="testimonial-author">
+                                                    <div class="testimonial-author-thumbnail">
+                                                        <img src="/static/img/clients/client-1.jpg" class="rounded-circle" alt=""/>
+                                                    </div>
+                                                    <p><strong>John Doe</strong><span>Okler</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="col">
+                                            <div class="testimonial testimonial-primary">
+                                                <blockquote>
+                                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula est, in consequat. Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                        elit. Donec hendrerit vehicula est, in consequat.</p>
+                                                </blockquote>
+                                                <div class="testimonial-arrow-down"></div>
+                                                <div class="testimonial-author">
+                                                    <div class="testimonial-author-thumbnail">
+                                                        <img src="/static/img/clients/client-1.jpg" class="rounded-circle" alt=""/>
+                                                    </div>
+                                                    <p><strong>John Doe</strong><span>Okler</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </div>
+{% endblock content %}
+
+    <footer id="footer">
+				<div class="container">
+					<div class="footer-ribbon">
+						<span>Часто ищут</span>
+					</div>
+					<div class="row py-5 my-4">
+						<div class="col-md-12 mb-4 mb-lg-0">
+
+                            <div class="row pt-3">
+								<div class="col-6 col-lg-3 mb-4 mb-lg-0">
+									<p class="font-weight-normal text-primary text-4 mb-4">Рекомендуемое</p>
+									<ul class="list list-icons list-icons-sm mb-0">
+										<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">Электронный полис ОСАГО</a></li>
+										<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">Оформить через РСА</a></li>
+										<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">Самое дешевое ОСАГО</a></li>
+										<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">Продлить полис ОСАГО</a></li>
+										<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">Без ограничений</a></li>
+										<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">Калькулятор РСА</a></li>
+										<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">Для новичка</a></li>
+										<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">На мотоцикл</a></li>
+										<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">Круглосуточно</a></li>
+										<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">С доставкой</a></li>
+										<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">Без прав</a></li>
+										<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">Онлайн калькулятор ОСАГО</a></li>
+										<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">Без стажа</a></li>
+										<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">Без дополнительных услуг</a></li>
+										<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">Для регионов</a></li>
+									</ul>
+								</div>
+								<div class="col-6 col-lg-3 mb-4 mb-lg-0">
+
+
+
+
+
+
+									<p class="font-weight-normal text-primary text-4 mb-4">Самые популярные</p>
+									<ul class="list list-icons list-icons-sm mb-0">
+                                    <li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">Альфастрахование</a></li>
+                                    <li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">Росгосстрах</a></li>
+                                    <li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">Ингосстрах</a></li>
+                                    <li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">Тинькофф Страхование</a></li>
+                                    <li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">Ресо-Гарантия</a></li>
+                                    <li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">ВСК</a></li>
+                                    <li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">Согаз</a></li>
+                                    <li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">Тинькофф Страхование</a></li>
+                                    <li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">Ренессанс Страхование</a></li>
+                                    <li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">Согласие</a></li>
+                                    <li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">МАКС</a></li>
+                                    <li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">ГАЙДЕ</a></li>
+                                    <li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">Росэнерго</a></li>
+                                    <li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">Надежда</a></li>
+                                    <li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">Энергогарант</a></li>
+                                    <li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">Астро-Волга</a></li>
+                                    <li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">Сургутнефтегаз</a></li>
+									<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">Абсолют Страхование</a></li>
+									<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">Сбербанк Страхование</a></li>
+									<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">ОСК</a></li>
+
+									</ul>
+								</div>
+								<div class="col-6 col-lg-3 mb-4 mb-lg-0">
+                                    									<p class="font-weight-normal text-primary text-4 mb-4">В крупных городах</p>
+
+									<ul class="list list-icons list-icons-sm mb-0">
+                                        В Москве
+										<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">В Екатеринбурге</a></li>
+										<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">В Нижнем Новгороде</a></li>
+										<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">В Воронеже</a></li>
+										<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">В Новосибирске</a></li>
+										<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">В Уфе</a></li>
+										<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">В Челябинске</a></li>
+										<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">В Краснодаре</a></li>
+										<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">В Красноярске</a></li>
+										<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">В Самаре</a></li>
+
+
+									</ul>
+								</div>
+								<div class="col-6 col-lg-3 mb-4 mb-lg-0">
+									<ul class="list list-icons list-icons-sm mb-0">
+										<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">В Волгограде</a></li>
+										<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">В Санкт-Петербурге</a></li>
+										<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">В Ярославле</a></li>
+										<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">В Ростове-на-Дону</a></li>
+										<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">В Казани</a></li>
+										<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">В Перми</a></li>
+										<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">В Пензе</a></li>
+										<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">В Омске</a></li>
+										<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">В Тольятти</a></li>
+										<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">В Саратове</a></li>
+										<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">В Оренбурге</a></li>
+										<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">В Липецке</a></li>
+										<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">В Курске</a></li>
+										<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">В Иркутске</a></li>
+									</ul>
+								</div>
+
+							</div>
+
+
+
+						</div>
+
+					</div>
+				</div>
+
+
+
+
+
+        <div class="footer-copyright">
+
+					<div class="container py-2">
+
+            <div class="row">
+						<div class="col-md-9 mb-4 mb-lg-0">
+
+                            <div class="row pt-3">
+								<div class="col-6 col-lg-4 mb-4 mb-lg-0">
+									<ul class="list list-icons list-icons-sm mb-0">
+										<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">О проекте</a></li>
+										<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">Контакты</a></li>
+										<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">Наши вакансии</a></li>
+										<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">Наши эксперты</a></li>
+									</ul>
+								</div>
+								<div class="col-6 col-lg-4 mb-4 mb-lg-0">
+									<ul class="list list-icons list-icons-sm mb-0">
+										<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">Энциклопедия</a></li>
+										<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">Для агентов</a></li>
+										<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">Карта сайта</a></li>
+									</ul>
+								</div>
+								<div class="col-6 col-lg-4 mb-4 mb-lg-0">
+									<ul class="list list-icons list-icons-sm mb-0">
+										<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">Политика конфиденциальности</a></li>
+										<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">Пользовательское соглашение</a></li>
+										<li><i class="fas fa-angle-right top-8"></i> <a class="link-hover-style-1" href="#">Партнерская программа</a></li>
+									</ul>
+								</div>
+
+							</div>
+
+							<p class="mt-2 mb-2">
+                                © 2022, ООО «polis-online.su». При использовании материалов гиперссылка на polis-online.su обязательна. ИНН 860103702354, 197227, г. Санкт-Петербург, проспект Испытателей, дом 8, 16 этаж.
+                                    Мы используем файлы cookie для того, чтобы предоставить пользователям больше возможностей при посещении сайта polis-online.su. Подробнее об условиях использования.
+
+                            </p>
+
+
+
+						</div>
+						<div class="col-md-3 mb-4 mb-lg-0">
+							<h5 class="text-3 mb-3 pb-1">Контакты</h5>
+							<p class="text-8 text-color-light font-weight-bold"><a href="tel:0123456789" class="text-decoration-none text-color-light">(812) 555-5555</a></p>
+{#							<p class="mb-2">International: <a href="tel:0123456789" class="text-decoration-none">(333) 456-6670</a></p>#}
+{#							<p class="mb-2">Fax: (222) 531-8999</p>#}
+							<ul class="list list-icons list-icons-lg">
+								<li class="mb-1"><i class="far fa-dot-circle text-color-primary"></i><p class="m-0">г. Санкт-Петербург, пр.Испытателей, д.8/1.</p></li>
+								<li class="mb-1"><i class="far fa-envelope text-color-primary"></i><p class="m-0"><a href="mailto:mail@example.com">mail@polis-online.su</a></p></li>
+							</ul>
+							<ul class="footer-social-icons social-icons mt-4">
+								<li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f text-2"></i></a></li>
+								<li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter text-2"></i></a></li>
+								<li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in text-2"></i></a></li>
+							</ul>
+						</div>
+					</div>
+
+
+
+
+
+
+						</div>
+					</div>
+
+
+			</footer>
+</div>
+
+<!-- Vendor -->
+<script src="/static/vendor/jquery/jquery.min.js"></script>
+<script src="/static/vendor/jquery.appear/jquery.appear.min.js"></script>
+<script src="/static/vendor/jquery.easing/jquery.easing.min.js"></script>
+<script src="/static/vendor/jquery.cookie/jquery.cookie.min.js"></script>
+<script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/static/vendor/jquery.validation/jquery.validate.min.js"></script>
+<script src="/static/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
+<script src="/static/vendor/jquery.gmap/jquery.gmap.min.js"></script>
+<script src="/static/vendor/lazysizes/lazysizes.min.js"></script>
+<script src="/static/vendor/isotope/jquery.isotope.min.js"></script>
+<script src="/static/vendor/owl.carousel/owl.carousel.min.js"></script>
+<script src="/static/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script src="/static/vendor/vide/jquery.vide.min.js"></script>
+<script src="/static/vendor/vivus/vivus.min.js"></script>
+
+<!-- Theme Base, Components and Settings -->
+<script src="/static/js/theme.js"></script>
+
+<!-- Circle Flip Slideshow Script -->
+<script src="/static/vendor/circle-flip-slideshow/js/jquery.flipshow.min.js"></script>
+<!-- Current Page Views -->
+<script src="/static/js/views/view.home.js"></script>
+
+<!-- Theme Custom -->
+<script src="/static/js/custom.js"></script>
+
+<!-- Theme Initialization Files -->
+<script src="/static/js/theme.init.js"></script>
+
+</body>
+</html>

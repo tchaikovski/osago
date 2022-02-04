@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+{% block description %}{{ product.description }}{% endblock %}
+{% block title %}{{ product.title }}{% endblock %}
+
+{% block content %}
+
+
+
+    <section class="stock">
+        <div class="container">
+
+            <div class="stock-banner stock-banner-large">
+                <div>
+                    <div class="stock-banner-large-title"><h1>{{ product.name }}</h1></div>
+                    {% autoescape off %} {{ product.content }} {% endautoescape %}
+                    {% if product.code %}
+                        {% autoescape off %}{{ product.code }}{% endautoescape %}
+                {% endif %}
+
+                </div>
+
+            </div></div>
+    </section>
+
+
+{% endblock %}
